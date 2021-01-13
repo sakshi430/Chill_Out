@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Chill Out</string>
+    <string name="scifi">Umbrella Academy
+
+Stranger thing
+
+The Hundred
+
+Dr. Who
+
+The person of interest
+
+Agents of shields
+
+Black mirror
+
+Flash
+
+The Mandlorian
+
+Dexter lab</string>
+    <string name="select_genre">Select Genre</string>
+</resources>
