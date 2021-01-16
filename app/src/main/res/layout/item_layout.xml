@@ -26,14 +26,15 @@
             android:text="Title"
             android:textColor="#616161"
             android:textSize="18sp"
+            android:gravity="center"
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imgShare"
+            android:id="@+id/imgSearch"
             android:layout_width="30dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:src="@android:drawable/ic_menu_share"
+            android:src="@android:drawable/ic_menu_search"
             card_view:tint="#E9434343" />
 
     </LinearLayout>

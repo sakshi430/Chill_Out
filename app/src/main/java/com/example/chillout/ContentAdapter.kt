@@ -36,7 +36,7 @@ class ContentAdapter(private val context: Context, private val items: List<serie
                 Toast.makeText(context, currentItem!!.title + " Clicked !", Toast.LENGTH_SHORT).show()
             }
 
-            itemView.imgShare.setOnClickListener {
+            itemView.imgSearch.setOnClickListener {
 
                 val message: String =  currentItem!!.title
 
