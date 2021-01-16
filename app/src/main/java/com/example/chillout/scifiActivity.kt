@@ -15,7 +15,7 @@ class scifiActivity : AppCompatActivity(){
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         recyclerView.layoutManager = layoutManager
 
-        val adapter= ContentAdapter_scifi(this, Supplier.artists_list)
+        val adapter= ContentAdapter(this, Supplier.scifi_list)
         recyclerView.adapter = adapter
     }
 }

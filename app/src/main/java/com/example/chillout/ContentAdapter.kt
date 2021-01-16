@@ -7,29 +7,28 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_layout.view.*
 
 
-class ContentAdapter_scifi(private val context: Context, private val artists: List<scifi_list>) : RecyclerView.Adapter<ContentAdapter_scifi.MyViewHolder>(){
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContentAdapter_scifi.MyViewHolder {
+class ContentAdapter(private val context: Context, private val items: List<series_list>) : RecyclerView.Adapter<ContentAdapter.MyViewHolder>(){
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContentAdapter.MyViewHolder {
             val view = LayoutInflater.from(context).inflate(R.layout.item_layout, parent, false)
             return MyViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ContentAdapter_scifi.MyViewHolder, position: Int) {
-        val artist = artists[position]
+    override fun onBindViewHolder(holder: ContentAdapter.MyViewHolder, position: Int) {
+        val artist = items[position]
         holder.setData(artist, position)
     }
 
     override fun getItemCount(): Int {
-        return artists.size
+        return items.size
     }
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var currentItem: scifi_list? = null
+        var currentItem: series_list? = null
         var currentPosition: Int = 0
 
         init {
@@ -48,7 +47,7 @@ class ContentAdapter_scifi(private val context: Context, private val artists: Li
             }
         }
 
-        fun setData(item: scifi_list?, pos: Int) {
+        fun setData(item: series_list?, pos: Int) {
             itemView.txvTitle.text = item!!.title
 
             this.currentItem = item
