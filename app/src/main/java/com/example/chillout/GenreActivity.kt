@@ -19,23 +19,28 @@ class GenreActivity : AppCompatActivity() {
     }
 
     fun open_fantasy(view: View) {
-        Toast.makeText(this, "You have clicked fantasy", Toast.LENGTH_SHORT).show();
+        val intent = Intent(applicationContext,fantasyActivity::class.java)
+        startActivity(intent)
     }
 
     fun open_horror(view: View) {
-        Toast.makeText(this, "You have clicked horror", Toast.LENGTH_SHORT).show();
+        val intent = Intent(applicationContext,horrorActivity::class.java)
+        startActivity(intent)
     }
 
     fun open_drama(view: View) {
-        Toast.makeText(this, "You have clicked drama", Toast.LENGTH_SHORT).show();
+        val intent = Intent(applicationContext,dramaActivity::class.java)
+        startActivity(intent)
     }
 
     fun open_comedy(view: View) {
-        Toast.makeText(this, "You have clicked comedy", Toast.LENGTH_SHORT).show();
+        val intent = Intent(applicationContext,comedyActivity::class.java)
+        startActivity(intent)
     }
 
     fun open_adventure(view: View) {
-        Toast.makeText(this, "You have clicked adventure", Toast.LENGTH_SHORT).show();
+        val intent = Intent(applicationContext,adventureActivity::class.java)
+        startActivity(intent)
     }
 
 }
