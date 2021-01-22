@@ -19,6 +19,12 @@
         </activity>
         <activity android:name=".GenreActivity" />
         <activity android:name=".scifiActivity" />
+        <activity android:name=".fantasyActivity" />
+        <activity android:name=".horrorActivity" />
+        <activity android:name=".comedyActivity" />
+        <activity android:name=".dramaActivity" />
+        <activity android:name=".adventureActivity" />
+
 
     </application>
 

@@ -10,12 +10,15 @@ class GenreActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.card_layout)
+//        setCardBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimary))
 
     }
 
     fun open_scifi(view: View) {
         val intent = Intent(applicationContext,scifiActivity::class.java)
         startActivity(intent)
+
+
     }
 
     fun open_fantasy(view: View) {
